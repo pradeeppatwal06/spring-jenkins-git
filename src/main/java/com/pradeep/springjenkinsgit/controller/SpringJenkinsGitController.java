@@ -11,6 +11,6 @@ public class SpringJenkinsGitController {
 
     @GetMapping("/get/{name}")
     public String get(@PathVariable("name") String name) {
-        return "Hello, how are you" +name;
+        return "Hello: " +name;
     }
 }
