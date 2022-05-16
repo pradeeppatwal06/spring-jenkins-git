@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SpringJenkinsGitController {
 
     @GetMapping("/get/{name}")
-    public get(@PathVariable("name") String name) {
+    public String get(@PathVariable("name") String name) {
         return "Hello, how are you" +name;
     }
 }
