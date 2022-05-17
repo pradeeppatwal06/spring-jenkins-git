@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/jenkins")
 public class SpringJenkinsGitController {
 
-    @GetMapping("/get/{name}")
-    public String get(@PathVariable("name") String name) {
-        return "Hello to my community... " +name;
+    @GetMapping("/get")
+    public String get() {
+        return "Hello to my community... ";
     }
 }
